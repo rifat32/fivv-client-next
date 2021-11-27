@@ -7,25 +7,24 @@ import Image from 'next/image'
 const TestimonialComponent = () => {
     return (
         <>
-              <div className="row">
+        <div className="row">
         <div className="col-md-9 col-sm-9 col-xs-12" style={{marginLeft:"9rem"}}>
       <div className="row">
         <div className="col-md-12 col-sm-12 col-xs-12">
-          <h4 className="page_title"><span><i className="fa fa-user-plus" /><b>Testimonials</b></span></h4>
+          <h4 className="page_title text-center"><span><i className="fa fa-user t-icon" /><b>Testimonials</b></span></h4>
         </div>
       </div>
-      <div className="testimonial_box">
+      <div className="row">
       {TestimonialData.map((el,index) => {
  return (
     <div key={index} className="row" style={{margin: 0}}>
     <div className="testimonial">
-      <div className="col-md-2 col-sm-4 pad0">
+      <div className="col-md-2 col-sm-4" style={{padding:0}}>
       <Image src={el.img} alt="profile-pic" quality={1} placeholder="blur"  layout="responsive" priority  />
       </div>
       <div className="col-md-10 col-sm-8">
-        <h3>{el.title}
+        <h3 className="t-title">{el.title}
            
-            
              </h3>
              <span>
              {
@@ -54,12 +53,12 @@ return <>
              
        
         
-        <p> 
+        <p className="comment"> 
        {
            el.comment
        }
         </p>
-        <h4>{el.name}</h4>
+        <h5 className="name">{el.name}</h5>
       </div>
     </div>
   </div>

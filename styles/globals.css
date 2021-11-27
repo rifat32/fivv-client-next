@@ -26,16 +26,7 @@
 .footerLinks a:hover {
   color: #fff;
 }
-.icons-list img {
-  width: auto;
-}
 
-.page_title {
-  margin: 13px 0 40px 0 !important;
-}
-.page_title span b {
-  font-weight: 500 !important;
-}
 .footerDiv {
   max-width: 95%;
 }
@@ -47,60 +38,25 @@
 }
 
 @media screen and (max-width: 767px) {
-  .page_title {
-    margin-bottom: 15px !important;
-  }
-
   .footerTitle {
     font-size: 20px;
     line-height: 30px;
   }
-  .contacts-block {
-    margin-top: 0 !important;
-  }
+
   .footerLinks {
     text-align: left;
     line-height: 20px !important;
     font-size: 12px;
     margin: 0;
   }
-  .SearChes {
-    padding: 0 !important;
-  }
-}
-
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 0;
 }
 
 @media screen and (max-width: 767px) {
-  .icons-list {
-    margin-top: 20px;
-  }
   .footerLinkTitle {
     width: 100% !important;
     font-weight: 500 !important;
     font-size: 13px;
   }
-}
-
-.ing .fa {
-  margin-right: 15px;
-}
-
-amp-img,
-img {
-  height: 100%;
-  width: 100%;
-}
-
-.mbr-m-sub-1,
-.mbr-row {
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
 
 .sectionBeforeFooterDescription {
@@ -113,32 +69,7 @@ img {
   padding-bottom: 23px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h5 {
-  font-family: Trebuchet MS !important;
-}
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Trebuchet MS !important;
-}
-.contacts-block {
-  margin-top: 60px;
-}
-
-.checked {
-  color: orange;
+img {
+  height: 100%;
+  width: 100%;
 }

@@ -35,13 +35,13 @@ const TestimonialComponent = () => {
           {
             Array.from(Array(el.rating), (e, i) => {
 return <>
-<span class="fa fa-star checked"></span>
+<span className="fa fa-star checked"></span>
 </>
 })}
  {
             Array.from(Array(5 - el.rating), (e, i) => {
 return <>
-<span class="fa fa-star"></span>
+<span className="fa fa-star"></span>
 </>
 })}
 
@@ -74,7 +74,7 @@ return <>
      
       </div>
       <div className="col-md-12 col-sm-12 col-xs-12" style={{paddingLeft: 0, paddingBottom: 15}}>
-        <h3>What's your Story?</h3>
+        <h3>What{`'`}s your Story?</h3>
         <p style={{marginBottom: 0}}>We are looking forward to know about your experience with
           ImagesBazaar. Simply email us your thoughts at <a href="mailto:bindu@imagesbazaar.com">bindu@imagesbazaar.com.</a> We would be honored to
           have your inputs to include with the testimonials of our esteemed clients! Kindly feel free

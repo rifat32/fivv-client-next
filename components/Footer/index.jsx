@@ -30,9 +30,9 @@ const Footer = () => {
   <div className="container">
     <div className="title align-center">
       <h3 className="mbr-section-title mbr-fonts-style mbr-semibold display-2">Why ImagesBazaar?</h3>
-      <h4 className="mbr-text mbr-gray mbr-fonts-style mbr-pt-2 display-7">India's diversity and complexity can be
+      <h4 className="mbr-text mbr-gray mbr-fonts-style mbr-pt-2 display-7">India{`'`}s diversity and complexity can be
         witnessed through its people, traditions and values associated with distinctive regional customs,
-        habits, lifestyle and festivals. That's why our content reflects the innate expressions of deep-rooted
+        habits, lifestyle and festivals. That{`'`}s why our content reflects the innate expressions of deep-rooted
         feelings of individuals through which spring their day-to-day actions. From contemporary concepts and
         ideas to the broadest range of categories depicting Indians in virtually all walks of life, age groups
         and expressions - you will find it all here! <a href="/aboutus" style={{textDecoration: 'none'}}> Know
@@ -44,7 +44,7 @@ const Footer = () => {
  <section className="footer1  cid-rhbP4MQmLL" id="footer02-b">
   <div className="container-fluid">
     <div className="text-center" id="Recent_Searches">
-      <h5 className="Worlds_Collection">World's largest collection of Creative Indian <b>images</b> &amp; <b>videos</b></h5>
+      <h5 className="Worlds_Collection">World{`'`}s largest collection of Creative Indian <b>images</b> &amp; <b>videos</b></h5>
     </div>
     <div className="row jc-c">
       <div className="col-lg-7 col-md-5 col-sm-6 md-pb col1">

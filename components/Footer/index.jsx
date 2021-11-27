@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import { sectionBeforeFooterData } from './SectionBeforeFooterData';
 // import { 
 //   TO_ABOUT_PAGE,
 //   TO_HOME_PAGE,
@@ -22,116 +23,136 @@ import Link from "next/link"
 //   ],
     
 // };
+const companyInfoData = {
+  title: "Company Info",
+  links: [
+    {label:"Home", slug:"/"},
+    {label:"About Us", slug:"/about"},
+    {label:"Testimonials", slug:"testimonials"},
+    {label:"FAQ", slug:"faq"},
+    {label:"BookReaserch", slug:"bookresearch"},
+    {label:"Contact Us", slug:"contact-form"},
+    {label:"Feedback", slug:"https://us1.list-manage.com/survey?u=24dc39f132c498d9e38ad1665&id=bae23faa1d&attribution=false"}
+  ],
+    
+};
+const learnMoredata = {
+  title: "Learn More",
+  links: [
+    "Pricing",
+    "Licensing",
+    "Terms of Use",
+    "Privacy Policy"
+  ],
+};
+const needHelpData = {
+  title: "Need Help",
+  links: [
+    //{label:"Contact Us", slug:TO_CONTACTUS_PAGE},
+    { text: "99 Address XYZ. USA", icon: "/location.svg" },
+    { text: "(1234) 654-00000", icon: "/phone.svg" },
+    { text: "support@cheapbookdeals.com", icon: "/inbox.svg" },
+    { text: "Mon - Sat 09:00 - 17:00", icon: "/time.svg" },
+  ]
+};
 
 const Footer = () => {
   return (
     <>
-     <section className="title1 cid-rgVrt4Q0UQ" id="title02-8">
+     <section className="section-before-footer" >
   <div className="container">
-    <div className="title align-center">
-      <h3 className="mbr-section-title mbr-fonts-style mbr-semibold display-2">Why ImagesBazaar?</h3>
-      <h4 className="mbr-text mbr-gray mbr-fonts-style mbr-pt-2 display-7">India{`'`}s diversity and complexity can be
-        witnessed through its people, traditions and values associated with distinctive regional customs,
-        habits, lifestyle and festivals. That{`'`}s why our content reflects the innate expressions of deep-rooted
-        feelings of individuals through which spring their day-to-day actions. From contemporary concepts and
-        ideas to the broadest range of categories depicting Indians in virtually all walks of life, age groups
-        and expressions - you will find it all here! <a href="/aboutus" style={{textDecoration: 'none'}}> Know
-          More</a></h4>
-    </div>
+   
+      <h2 className="text-center">{sectionBeforeFooterData.title}</h2>
+      <h4 className="sectionBeforeFooterDescription text-center w-100"
+          >{sectionBeforeFooterData.description}</h4>
+    
   </div>
 </section>
 
- <section className="footer1  cid-rhbP4MQmLL" id="footer02-b">
-  <div className="container-fluid">
-    <div className="text-center" id="Recent_Searches">
-      <h5 className="Worlds_Collection">World{`'`}s largest collection of Creative Indian <b>images</b> &amp; <b>videos</b></h5>
+ <section className="footerSection "  >
+  <div className="footerDiv container">
+    <div className="text-center">
+      {/* <h5 className="footerTitle">World{`'`}s largest collection of Creative Indian <b>images</b> &amp; <b>videos</b></h5> */}
     </div>
-    <div className="row jc-c">
-      <div className="col-lg-7 col-md-5 col-sm-6 md-pb col1">
-        <h3 className="white display-7  Toll_Nmbrs"><strong>All India Toll Free: 1800-11-6869</strong></h3>
-        <div className="align-center contacts-block jc-c column">
-          <div className="icons-list ">
-            <img src="https://ibcdn.imagesbazaar.com/NodeData/assets/images/btn-Help1.png" />
-          </div>
-          <h3 className="section-title light align-left white fonts-style display-4 Footer_Cntnt">© ImagesBazaar.com. A
-            division of Mash Audio Visuals Pvt. Ltd. All rights reserved.</h3>
-        </div>
+    <div className="row">
+      <div className="col-lg-6 col-md-5 col-sm-6 md-pb col1">
+        <h3  style={{color:"#fff"}}><strong>
+        liberty university login,jerry falwell library,jfl,luoa,liberty university library,jerry falwell library database,jfl library,luoa login,loua,liberty edu email,wlu library,liberty university bookstore,liberty bookstore,liberty university apparel.{}
+          
+          </strong>
+          
+          </h3>
+       
       </div>
-      <div className="col-lg-5 col-md-7 col-sm-6 md-pb ">
-        <div className="row jc-c">
-          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 md-pb">
-            <h3 className="display-7">Company Info</h3>
+      <div className="col-lg-5 col-md-7 col-sm-6">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <h3 className="footerLinkTitle">Company Info</h3>
             <br />
             <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4">
-
-<Link href="/">
-<a style={{textDecoration: 'none'}}  className="display-4">Home</a>
-</Link>
-               
-                  
-                  </h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/aboutus" className="display-4">About Us</a>
-                </h5>
-              </div>
-            
-              <div className="col-lg-12 col-md-12 col-sm-12">
-       
-                <h5 className="display-4">
-                <Link href="/testimonials">
-                <a style={{textDecoration: 'none'}} className="display-4">Testimonials</a>
+             
+              {
+                companyInfoData.links.map((el,index) => {
+                  return (
+                    <div className="col-lg-12 col-md-12 col-sm-12" key={el.index}>
+                  <h5 className="footerLinks">
+                <Link href={el.slug}>
+                <a style={{textDecoration: 'none'}} className="footerLinks">{el.label}</a>
 </Link>
                  
                 </h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/freeresearch" className="display-4">Image
-                    Research</a></h5>
-              </div>
+                  </div>
+                  )
+                })
+              }
+            
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 md-pb">
-            <h3 className="display-7">Learn More</h3>
+            <h3 className="footerLinkTitle">Learn More</h3>
             <br />
             <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/ImageVideoSubscription" className="display-4">Pricing</a></h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/licensing" className="display-4">Licensing</a>
-                </h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/termsofuse" className="display-4">Terms of
-                    Use</a></h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/privacypolicy" className="display-4">Privacy
-                    Policy</a></h5>
-              </div>
+
+            
+              {
+            learnMoredata.links.map((el,index) => {
+                  return (
+                    <div className="col-lg-12 col-md-12 col-sm-12" key={el.index}>
+                    <h5 className="footerLinks">
+                 
+                  <a style={{textDecoration: 'none'}} className="footerLinks">{el}</a>
+  
+                   
+                  </h5>
+                    </div>
+                  )
+                })
+              }
+           
             </div>
           </div>
           <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 md-pb img_cls">
-            <h3 className="display-7">Need Help </h3>
+            <h3 className="footerLinkTitle">Need Help </h3>
             <br />
             <div className="row">
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/contactus" className="display-4">Contact
-                    Us</a></h5>
-              </div>
-              <div className="col-lg-12 col-md-4 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/searchtips" className="display-4">Search
-                    Tips</a></h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/faq" className="display-4">FAQ</a></h5>
-              </div>
-              <div className="col-lg-12 col-md-12 col-sm-12">
-                <h5 className="display-4"><a style={{textDecoration: 'none'}} href="/technical" className="display-4">Technical</a></h5>
-              </div>
+            
+              {
+            needHelpData.links.map((el,index) => {
+                  return (
+                    <div className="col-lg-12 col-md-12 col-sm-12" key={el.index}>
+                    <h5 className="footerLinks">
+                
+                  <a style={{textDecoration: 'none'}} className="footerLinks">{el.text}</a>
+  
+                   
+                  </h5>
+                    </div>
+                  )
+                })
+              }
+             
+         
+           
             </div>
           </div>
         </div>
